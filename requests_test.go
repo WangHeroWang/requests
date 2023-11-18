@@ -211,7 +211,7 @@ func TestPostGet(t *testing.T) {
 	client := Requests()
 	client.Debug = 1
 
-	resp, err := client.Post("https://www.httpbin.org/post", Datas{"abc": "123", "ddd": "789"})
+	resp, err := client.Post("https://www.httpbin.org/post", Datas{"abc": "123", "def": "456"})
 
 	spew.Dump(client)
 
